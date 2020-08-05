@@ -13,4 +13,8 @@ describe('VerboseSettings', function() {
 	it('should also show this', function() {
 		console.verbose('you should also see this');
 	});
+	it('but not this', function() {
+		VerboseSettings.setVerbose(false);
+		console.verbose('but not this');
+	});
 });
